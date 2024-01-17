@@ -1,6 +1,6 @@
 from openai import OpenAI
 import configparser
-# client = OpenAI()
+client = OpenAI()
 
 def get_openai_client():
     configParser = configparser.RawConfigParser()
@@ -12,7 +12,7 @@ def get_openai_client():
     )
     return client
 
-client = get_openai_client()
+# client = get_openai_client()
 
 query = """
 Consider RDF dataset with the following namespace prefixes: 
