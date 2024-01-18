@@ -19,13 +19,13 @@ Consider RDF dataset with the following namespace prefixes:
 ``` sparql
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX eozol: <http://www.dudajevagatve.lv/eozol#>
+PREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>
 ```
 Consider the following training set with respective sparql queries and their description
 ```
 {
   "description": "Find all problems on Algebraic transactions involving binomial square formula. Skills are selected by year of assignment and sorted from lowest to highest year",
-  "SPARQL": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX eozol: <http://www.dudajevagatve.lv/eozol#>\nSELECT ?sub WHERE {\n?sub eozol:skill \"alg.tra.binom.square\" ;\n     eozol:year ?year\n} ORDER BY ASC(?year)"
+  "SPARQL": "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>\nPREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\nPREFIX eliozo: <http://www.dudajevagatve.lv/eliozo#>\nSELECT ?sub WHERE {\n?sub eliozo:skill \"alg.tra.binom.square\" ;\n     eliozo:year ?year\n} ORDER BY ASC(?year)"
 }
 ```
 Please convert the following description to SPARQL: All problems on algebraic transactions binomial square formula for 2002.
